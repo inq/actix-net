@@ -23,10 +23,10 @@ path = "src/lib.rs"
 default = []
 
 [dependencies]
-actix-codec = { path = "../actix-codec" }
-actix-rt = { path = "../actix-rt", default-features = false }
-actix-service = { path = "../actix-service" }
-actix-utils = { path = "../actix-utils" }
+actix-codec = { git = 'https://github.com/inq/actix-net.git'}
+actix-rt = { git = 'https://github.com/inq/actix-net.git', default-features = false }
+actix-service = { git = 'https://github.com/inq/actix-net.git'}
+actix-utils = { git = 'https://github.com/inq/actix-net.git'}
 
 futures-core = { version = "0.3.7", default-features = false, features = ["alloc"] }
 log = "0.4"
@@ -36,7 +36,7 @@ slab = "0.4"
 tokio = { version = "1", features = ["sync"] }
 
 [dev-dependencies]
-actix-rt = { path = "../actix-rt" }
+actix-rt = { git = 'https://github.com/inq/actix-net.git'}
 bytes = "1"
 env_logger = "0.8"
 futures-util = { version = "0.3.7", default-features = false, features = ["sink"] }

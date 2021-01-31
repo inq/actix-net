@@ -23,7 +23,7 @@ default = ["macros"]
 macros = ["actix-macros"]
 
 [dependencies]
-actix-macros = { version = "0.2.0-beta.1", optional = true }
+actix-macros = { git = 'https://github.com/inq/actix-net.git', optional = true }
 
 futures-core = { version = "0.3", default-features = false }
 tokio = { version = "1", features = ["rt", "net", "parking_lot", "signal", "sync", "time"] }

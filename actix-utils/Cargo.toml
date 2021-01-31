@@ -16,9 +16,9 @@ name = "actix_utils"
 path = "src/lib.rs"
 
 [dependencies]
-actix-codec = { path = "../actix-codec" }
-actix-rt = { path = "../actix-rt", default-features = false }
-actix-service = { path = "../actix-service" }
+actix-codec = { git = 'https://github.com/inq/actix-net.git'}
+actix-rt = { git = 'https://github.com/inq/actix-net.git', default-features = false }
+actix-service = { git = 'https://github.com/inq/actix-net.git'}
 
 futures-core = { version = "0.3.7", default-features = false }
 futures-sink = { version = "0.3.7", default-features = false }
